@@ -1,0 +1,21 @@
+# Proprietários de Código
+
+# Apostila principal
+APOSTILA_ALGORITMOS_PROGRAMACAO.md @hansufsm
+
+# Notebooks
+*.ipynb @hansufsm
+
+# Documentação
+README.md @hansufsm
+CONTRIBUTING.md @hansufsm
+CODE_OF_CONDUCT.md @hansufsm
+INDICE_*.md @hansufsm
+SUMARIO_*.md @hansufsm
+
+# Configuração
+LICENSE @hansufsm
+.github/ @hansufsm
+
+# Contato para questions
+# Email: hans@ufsm.br
