@@ -634,58 +634,45 @@ fimalgoritmo
 
 ---
 
-## 📊 Cronograma Recomendado (8 semanas)
+## 📊 Cronograma Detalhado (16 semanas)
 
-### **Semana 1: Fundamentos (Capítulos 1-3)**
-- **Aulas:** Apostila cap. 1-3
-- **Lab:** Português Estruturado em VisualG
-- **Notebook:** 01_Conceitos_Basicos (exercícios 1.1, 2.1, 3.1)
-- **Horas:** 6-8h
+### **MÓDULO 1: Fundamentos da Programação (Semanas 1-4)**
 
-### **Semana 2: Estruturas de Controle (Capítulo 4)**
-- **Aulas:** Apostila cap. 4
-- **Lab:** Estruturas SE-SENÃO, aplicações em Física
-- **Notebook:** 02_Estruturas (exercício 4.1)
-- **Horas:** 4-6h
+| Semana | Caps | Tópicos principais | Lab/Prática | Avaliação |
+|---|---|---|---|---|
+| 1 | 1, 2 | Algoritmos; fluxogramas; lógica booleana | VisualG: trajetória de projétil | — |
+| 2 | 2, 3 | Variáveis; tipos de dados; tabelas-verdade | VisualG: conversor temperatura | **L01** |
+| 3 | 3, 4 | Controle SE-SENÃO; validação de dados | VisualG: estados da água | — |
+| 4 | 4 | Condicionais aninhadas; revisão | **Lab avaliativo em VisualG** | **P1 + L02** |
 
-### **Semana 3: Repetição (Capítulo 5)**
-- **Aulas:** Apostila cap. 5
-- **Lab:** Loops PARA, ENQUANTO, integração numérica
-- **Notebook:** 02_Estruturas (exercícios 5.1, 5.2)
-- **Horas:** 6-8h
+### **MÓDULO 2: Estruturas de Iteração e Dados (Semanas 5-8)**
 
-### **Semana 4: Vetores e Matrizes (Capítulo 6)**
-- **Aulas:** Apostila cap. 6
-- **Lab:** Operações vetoriais, matrizes
-- **Notebook:** 02_Estruturas (exercícios 6.1, 6.2)
-- **Horas:** 5-6h
+| Semana | Caps | Tópicos principais | Lab/Prática | Avaliação |
+|---|---|---|---|---|
+| 5 | 5 | Loops PARA; tabelas de queda livre | NB02: v(t), h(t), gráficos | — |
+| 6 | 5 | ENQUANTO; série de Leibniz; convergência | NB02: análise de convergência | **L03** |
+| 7 | 6 | Vetores; matrizes; produto escalar 3D | NB02: soma de vetores, visualização | — |
+| 8 | 5, 6 | Revisão módulo 2; integração de conceitos | **Lab de revisão orientada** | **P2 + L04** |
 
-### **Semana 5: Funções (Capítulo 7)**
-- **Aulas:** Apostila cap. 7
-- **Lab:** Funções reutilizáveis, escopo
-- **Notebook:** 03_Metodos (exercício 7.1)
-- **Horas:** 5-6h
+### **MÓDULO 3: Funções e Métodos Numéricos (Semanas 9-12)**
 
-### **Semana 6: Métodos Numéricos (Capítulo 8)**
-- **Aulas:** Apostila cap. 8
-- **Lab:** Bisseção, diferenciação, integração
-- **Notebook:** 03_Metodos (exercícios 8.1, 8.2, 8.3)
-- **Horas:** 8-10h
+| Semana | Caps | Tópicos principais | Lab/Prática | Avaliação |
+|---|---|---|---|---|
+| 9 | 7 | Funções; procedimentos; escopo; módulos | NB03: módulo de energias | — |
+| 10 | 8 | Bisseção; diferenciação numérica | NB03: Ex 8.1, 8.2; precisão | **L05** |
+| 11 | 8 | Método Euler; integração Trapézio/Simpson | **P3**: NB04 Circuito RC | **P3** |
+| 12 | 9 | Estatística; outliers; regressão linear | **Projeto 1**: Pêndulo + incerteza | **L06 + Projeto 1** |
 
-### **Semana 7: Tratamento de Dados (Capítulo 9)**
-- **Aulas:** Apostila cap. 9
-- **Lab:** Estatística, outliers, visualização
-- **Projeto:** Análise de dados experimentais
-- **Horas:** 6-8h
+### **MÓDULO 4: Aplicações Avançadas (Semanas 13-16)**
 
-### **Semana 8: Projetos Integrados (Capítulo 10)**
-- **Aulas:** Apostila cap. 10
-- **Projeto 1:** Simulação de projétil
-- **Projeto 2:** Pêndulo simples
-- **Notebook:** 03_Metodos (exercícios 10.1, 10.2)
-- **Horas:** 8-10h
+| Semana | Caps | Tópicos principais | Lab/Prática | Avaliação |
+|---|---|---|---|---|
+| 13 | 10 | Simulação de projétil com arrasto | NB03: Euler; arrasto quadrático | — |
+| 14 | 10 | Big-O empírico; oscilador amortecido | Análise complexidade; 3 regimes | **L07** |
+| 15 | 10 | **Projeto Capstone**: Integração completa | **Entrega Projeto 2** (orientado) | **Projeto 2** |
+| 16 | 1-10 | Revisão geral da disciplina | Resolução de dúvidas | **Prova Final** |
 
-**Total:** 48-62 horas
+**Total:** 60 horas (4h/semana)
 
 ---
 
@@ -725,25 +712,46 @@ Capítulo 9-10: ██████████ (Especializado - 100%)
 
 ---
 
-## ✅ Critérios de Avaliação Sugeridos
+## ✅ Critérios de Avaliação (16 semanas)
 
-### **Prova 1 (30% - Semana 3)**
-- Capítulos 1-4
-- Tópicos: Algoritmos, lógica, variáveis, condicionais
-- Formato: Questões abertas + código em Portugol
+### **Provas Teóricas (36%)**
 
-### **Prova 2 (30% - Semana 6)**
-- Capítulos 5-7
-- Tópicos: Loops, vetores, funções
-- Formato: Problemas de programação + análise
+| Prova | Peso | Semana | Conteúdo |
+|---|---|---|---|
+| **P1** | 12% | 4 | Caps 1-4: Algoritmos, lógica, variáveis, controle |
+| **P2** | 12% | 8 | Caps 5-6: Loops, vetores, matrizes |
+| **P3** | 12% | 11 | Caps 7-8: Funções, métodos numéricos |
+| **Prova Final** | — | 16 | Caps 1-10 (opcional) |
 
-### **Projetos (30%)**
-- Projeto 1 (15%): Análise de dados experimentais
-- Projeto 2 (15%): Simulação física completa
+### **Projetos Práticos (44%)**
 
-### **Participação/Listas (10%)**
-- Exercícios propostos dos Notebooks
-- Discussão de resultados
+| Projeto | Peso | Semana | Descrição |
+|---|---|---|---|
+| **Projeto 1** | 18% | 12 | Análise experimental: Pêndulo simples, estimação de g |
+| **Projeto 2** | 26% | 15 | Capstone integrador: Simulação física com múltiplos componentes |
+
+### **Listas de Exercícios (10%)**
+
+- **L01–L07** (1 por módulo) entregues conforme cronograma
+- Distribuído igualmente: ~1.4% cada
+- Avaliação por presença + esforço (não precisa 100% correto)
+- Exercícios em mix Portugol (VisualG) e Python (Colab)
+
+### **Participação e Frequência (10%)**
+
+- Presença em aulas (≥ 75% conforme Reg. UFSM)
+- Engajamento em discussões e laboratórios
+- Tentativa de exercícios mesmo se incorretos
+- Respeito aos prazos de entrega
+
+### **Fórmula Final**
+
+```
+Nota Final = 0.12×P1 + 0.12×P2 + 0.12×P3 + 0.18×Proj1 + 0.26×Proj2 + 0.10×Listas + 0.10×Participação
+```
+
+**Aprovação:** Nota ≥ 6.0 (conforme Reg. UFSM)  
+**Exame Final:** 4.0 ≤ Nota < 6.0 (até Semana 16, opcional para quem passou)
 
 ---
 

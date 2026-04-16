@@ -1,8 +1,27 @@
 # Algoritmos e Programação para Licenciatura em Física
 
 **Disciplina:** FSC1189 - Algoritmo e Programação  
+**Professor:** Prof. Hans Rogério Zimermann  
 **Instituição:** Universidade Federal de Santa Maria (UFSM)  
-**Data:** 2026
+**Centro:** Centro de Ciências Naturais e Exatas (CCNE)  
+**Departamento:** Departamento de Física  
+**Semestre:** 2026/1  
+**Carga Horária:** 60 horas (16 semanas)  
+
+---
+
+## 📜 Licença e Atribuição
+
+Este repositório utiliza **dupla licença**:
+
+| Material | Licença | Observações |
+|---|---|---|
+| **Código-fonte** (notebooks `.ipynb`, scripts Python) | [MIT License](LICENSE) | Implementações, algoritmos, exercícios resolvidos |
+| **Conteúdo Didático** (apostila, listas, guias) | [CC BY 4.0](LICENSE_CC.md) | Apostila, GUIA_DEBUGGING, Plano de Ensino, Listas |
+
+**Atribuição:** Prof. Hans Rogério Zimermann, UFSM, 2026
+
+Para mais detalhes, consulte [LICENSE](LICENSE) (MIT) e [LICENSE_CC.md](LICENSE_CC.md) (Creative Commons).
 
 ---
 
@@ -158,23 +177,40 @@ jupyter notebook 01_Conceitos_Basicos.ipynb
 
 ---
 
-## 🎯 Estrutura de Aprendizado Recomendada
+## 🎯 Cronograma 16 Semanas — Estrutura Pedagógica
 
-### **Semana 1-2: Fundamentos**
-1. Leia Capítulos 1-3 da apostila
-2. Execute exercícios em VisualG
-3. Complete Notebook 01 em Python
+### **Módulo 1: Fundamentos (Semanas 1-4)**
+| Semana | Capítulos | Atividades | Avaliação |
+|---|---|---|---|
+| 1-2 | 1-3 | Lab em VisualG; trajetória de projétil | — |
+| 3 | 3-4 | SE-SENÃO; validação de dados | — |
+| 4 | 4 | Revisão; exercícios integrados | **P1** |
 
-### **Semana 3-4: Estruturas Programação**
-1. Leia Capítulos 4-6 da apostila
-2. Implemente em VisualG
-3. Complete Notebook 02 com visualizações
+### **Módulo 2: Iteração e Dados (Semanas 5-8)**
+| Semana | Capítulos | Atividades | Avaliação |
+|---|---|---|---|
+| 5 | 5 | Loops PARA; tabelas de queda livre | — |
+| 6 | 5 | ENQUANTO; série de Leibniz; convergência | **Lista 3** |
+| 7 | 6 | Vetores; produto escalar; visualização 3D | — |
+| 8 | 5-6 | Revisão módulo 2 | **P2** |
 
-### **Semana 5-8: Aplicações Avançadas**
-1. Leia Capítulos 7-10 da apostila
-2. Estude métodos numéricos
-3. Realize projetos do Notebook 03
-4. Desenvolva projeto independente
+### **Módulo 3: Métodos Numéricos (Semanas 9-12)**
+| Semana | Capítulos | Atividades | Avaliação |
+|---|---|---|---|
+| 9 | 7 | Funções; escopo; módulos | — |
+| 10 | 8 | Bisseção; diferenciação numérica | **Lista 5** |
+| 11 | 8 | Euler; integração numérica; circuito RC | **P3** |
+| 12 | 9 | Análise estatística; regressão linear | **Projeto 1** |
+
+### **Módulo 4: Aplicações Avançadas (Semanas 13-16)**
+| Semana | Capítulos | Atividades | Avaliação |
+|---|---|---|---|
+| 13 | 10 | Simulação dinâmica; pêndulo | — |
+| 14 | 10 | Big-O empírico; oscilador amortecido | **Lista 7** |
+| 15 | 10 | Projeto Capstone integrado | **Projeto 2** |
+| 16 | 1-10 | Revisão geral | **Prova Final** |
+
+**Consulte [PLANO_DE_ENSINO_16_SEMANAS.md](PLANO_DE_ENSINO_16_SEMANAS.md) para cronograma detalhado.**
 
 ---
 
