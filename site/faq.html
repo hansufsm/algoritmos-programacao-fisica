@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - FSC1189 Algoritmos & Programação</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', 'Geist', sans-serif;
+    }
+    h1, h2, h3, .heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    details summary {
+      cursor: pointer;
+      user-select: none;
+      outline: none;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    details summary .toggle-icon {
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+    details[open] summary .toggle-icon {
+      transform: rotate(180deg);
+    }
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.25rem;
+      font-family: 'Courier New', monospace;
+      color: #0f172a;
+    }
+    pre code {
+      background: none;
+      padding: 0;
+      color: inherit;
+    }
+  </style>
+</head>
+<body class="bg-teal-700">
+  <div class="min-h-screen flex flex-col">
+    <!-- Nav -->
+    <nav class="fixed top-6 left-0 right-0 z-50 flex justify-center px-6">
+      <div class="bg-white rounded-full px-6 py-3 shadow-lg flex items-center justify-between gap-8 max-w-2xl">
+        <a href="index.html" class="font-jakarta font-semibold text-slate-900 flex items-center gap-2 hover:text-cyan-600 transition">
+          <span>← FSC1189</span>
+        </a>
+        <div class="flex gap-4">
+          <a href="quiz.html" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition">QuizAlgo</a>
+          <a href="index.html" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition">Voltar</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex items-center justify-center px-6 py-20 pt-32">
+      <div class="w-full max-w-4xl bg-green-50 rounded-3xl p-8 sm:p-14 shadow-2xl">
+
+        <!-- Hero -->
+        <div class="text-center mb-12">
+          <h1 class="text-5xl lg:text-6xl font-jakarta font-semibold tracking-tight text-slate-900 mb-4">
+            Perguntas Frequentes
+          </h1>
+          <p class="text-lg text-slate-600">
+            Respostas sobre Algoritmos, Portugol, Lógica de Programação e Métodos Numéricos
+          </p>
+        </div>
+
+        <!-- FAQ Sections -->
+        <div class="space-y-1">
+          <!-- Section 1: Conceitos Gerais -->
+          <section class="border-t border-slate-200">
+            <details class="group py-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-jakarta font-semibold text-lg text-slate-900 hover:text-cyan-600 transition">
+                <span>Conceitos Gerais</span>
+                <svg class="toggle-icon w-5 h-5 text-cyan-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </summary>
+              <div class="mt-4 pl-0 space-y-4 text-slate-700 leading-relaxed">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">O que é um algoritmo?</h4>
+                  <p>Um algoritmo é uma sequência finita, ordenada e bem definida de instruções para resolver um problema específico. É independente de linguagem de programação.</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Qual a diferença entre Algoritmo, Pseudocódigo e Código?</h4>
+                  <table class="w-full text-sm border-collapse">
+                    <tr class="border-b border-slate-300">
+                      <td class="py-2 px-2 font-semibold">Algoritmo</td>
+                      <td class="py-2 px-2">Ideia em português natural</td>
+                      <td class="py-2 px-2">Entendida por humanos</td>
+                    </tr>
+                    <tr class="border-b border-slate-300">
+                      <td class="py-2 px-2 font-semibold">Pseudocódigo</td>
+                      <td class="py-2 px-2">Portugol (VisualG)</td>
+                      <td class="py-2 px-2">Formais, próximos de código</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 px-2 font-semibold">Código</td>
+                      <td class="py-2 px-2">Python, Java, C++</td>
+                      <td class="py-2 px-2">Executável pelo computador</td>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">O que é complexidade Big-O?</h4>
+                  <p>Big-O mede como o tempo de execução cresce com o tamanho da entrada (n). Exemplos: O(1) constante, O(n) linear, O(log n) logarítmica, O(n²) quadrática.</p>
+                </div>
+              </div>
+            </details>
+          </section>
+
+          <!-- Section 2: Módulo 1 Fundamentos -->
+          <section class="border-t border-slate-200">
+            <details class="group py-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-jakarta font-semibold text-lg text-slate-900 hover:text-cyan-600 transition">
+                <span>Módulo 1: Fundamentos da Programação</span>
+                <svg class="toggle-icon w-5 h-5 text-cyan-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </summary>
+              <div class="mt-4 pl-0 space-y-4 text-slate-700 leading-relaxed">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">O que é um fluxograma?</h4>
+                  <p>Um fluxograma é uma representação visual de um algoritmo usando símbolos padrão: óval (início/fim), retângulo (processo), losango (decisão), paralelogramo (entrada/saída).</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Como fazer validação de dados?</h4>
+                  <p>Validação verifica se a entrada está dentro de limites aceitáveis usando estruturas condicionais:</p>
+                  <pre><code>se (idade >= 0) e (idade <= 120) entao
+  escreva("Idade válida")
+senao
+  escreva("Idade inválida")
+fimse</code></pre>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Quais são os tipos de dados em VisualG?</h4>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li><strong>INTEIRO:</strong> números inteiros (-5, 0, 42)</li>
+                    <li><strong>REAL:</strong> números decimais (3.14, -0.5)</li>
+                    <li><strong>CADEIA:</strong> texto ("Olá", "FSC1189")</li>
+                    <li><strong>LOGICO:</strong> verdadeiro ou falso</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+          </section>
+
+          <!-- Section 3: Módulo 2 Iteração -->
+          <section class="border-t border-slate-200">
+            <details class="group py-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-jakarta font-semibold text-lg text-slate-900 hover:text-cyan-600 transition">
+                <span>Módulo 2: Estruturas de Iteração</span>
+                <svg class="toggle-icon w-5 h-5 text-cyan-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </summary>
+              <div class="mt-4 pl-0 space-y-4 text-slate-700 leading-relaxed">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Quando usar PARA vs ENQUANTO?</h4>
+                  <p><strong>PARA:</strong> quando o número de repetições é CONHECIDO (ex: preencher 10 linhas)</p>
+                  <p><strong>ENQUANTO:</strong> quando é DESCONHECIDO (ex: ler valores até que usuário diga "parar")</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">O que é convergência de série?</h4>
+                  <p>Convergência significa que conforme adicionamos mais termos de uma série, o resultado aproxima-se cada vez mais de um valor limite. Exemplo: série de Leibniz π = 4(1 - 1/3 + 1/5 - ...)</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Como somar elementos de um vetor?</h4>
+                  <pre><code>soma <- 0
+para i de 1 ate tamanho faca
+  soma <- soma + v[i]
+fimpara
+escreva("Soma: ", soma)</code></pre>
+                </div>
+              </div>
+            </details>
+          </section>
+
+          <!-- Section 4: Módulo 3 Métodos Numéricos -->
+          <section class="border-t border-slate-200">
+            <details class="group py-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-jakarta font-semibold text-lg text-slate-900 hover:text-cyan-600 transition">
+                <span>Módulo 3: Funções e Métodos Numéricos</span>
+                <svg class="toggle-icon w-5 h-5 text-cyan-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </summary>
+              <div class="mt-4 pl-0 space-y-4 text-slate-700 leading-relaxed">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Qual a diferença entre função e procedimento?</h4>
+                  <p><strong>Função:</strong> retorna um valor (usa <code>retorne</code>)</p>
+                  <p><strong>Procedimento:</strong> não retorna, apenas executa ações</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">O que é o método da bisseção?</h4>
+                  <p>Método para encontrar raízes de f(x)=0 dividindo repetidamente um intervalo [a,b] até convergir. Sempre funciona se f(a)·f(b) &lt; 0.</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Qual método de integração é mais preciso?</h4>
+                  <table class="w-full text-sm border-collapse">
+                    <tr class="border-b border-slate-300">
+                      <td class="py-2 px-2 font-semibold">Método</td>
+                      <td class="py-2 px-2 font-semibold">Erro</td>
+                      <td class="py-2 px-2 font-semibold">Uso</td>
+                    </tr>
+                    <tr class="border-b border-slate-300">
+                      <td class="py-2 px-2">Retângulo</td>
+                      <td class="py-2 px-2">O(h)</td>
+                      <td class="py-2 px-2">Mínimo</td>
+                    </tr>
+                    <tr class="border-b border-slate-300">
+                      <td class="py-2 px-2">Trapézio</td>
+                      <td class="py-2 px-2">O(h²)</td>
+                      <td class="py-2 px-2">Comum, rápido</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 px-2"><strong>Simpson</strong></td>
+                      <td class="py-2 px-2"><strong>O(h⁴)</strong></td>
+                      <td class="py-2 px-2"><strong>Mais preciso</strong></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </details>
+          </section>
+
+          <!-- Section 5: Módulo 4 Aplicações Avançadas -->
+          <section class="border-t border-slate-200">
+            <details class="group py-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-jakarta font-semibold text-lg text-slate-900 hover:text-cyan-600 transition">
+                <span>Módulo 4: Aplicações Avançadas</span>
+                <svg class="toggle-icon w-5 h-5 text-cyan-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </summary>
+              <div class="mt-4 pl-0 space-y-4 text-slate-700 leading-relaxed">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Qual é a fórmula do período de um pêndulo simples?</h4>
+                  <p><strong>T = 2π√(L/g)</strong></p>
+                  <p>Onde L é comprimento e g é aceleração gravitacional. Não depende da massa ou amplitude!</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">O que é regressão linear?</h4>
+                  <p>Ajuste de uma reta y = ax + b aos dados para estimar relação linear. Usa método de mínimos quadrados. R² mede qualidade do ajuste (0 a 1).</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Quais são os 3 regimes do oscilador amortecido?</h4>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li><strong>Subamortecido (β &lt; ω₀):</strong> oscila com amplitude decrescente</li>
+                    <li><strong>Criticamente amortecido (β = ω₀):</strong> retorna sem oscilar (menor tempo)</li>
+                    <li><strong>Superamortecido (β &gt; ω₀):</strong> retorna lentamente sem oscilar</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+          </section>
+
+          <!-- Section 6: Ferramentas -->
+          <section class="border-t border-slate-200">
+            <details class="group py-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-jakarta font-semibold text-lg text-slate-900 hover:text-cyan-600 transition">
+                <span>Ferramentas e Ambiente</span>
+                <svg class="toggle-icon w-5 h-5 text-cyan-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </summary>
+              <div class="mt-4 pl-0 space-y-4 text-slate-700 leading-relaxed">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Como instalar Python e bibliotecas?</h4>
+                  <pre><code># Opção 1: pip (linha de comando)
+pip install numpy pandas matplotlib scipy jupyter
+
+# Opção 2: Anaconda (recomendado)
+# Baixe de: https://www.anaconda.com/download
+
+# Opção 3: Google Colab (sem instalação!)
+# Acesse: https://colab.research.google.com</code></pre>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Como usar Jupyter Notebooks?</h4>
+                  <p><strong>Local:</strong> <code>jupyter notebook</code></p>
+                  <p><strong>Google Colab:</strong> Faça upload do arquivo .ipynb em <a href="https://colab.research.google.com" class="text-cyan-600 hover:text-cyan-700 underline">colab.research.google.com</a></p>
+                  <p><strong>VS Code:</strong> Instale extensão Jupyter e abra arquivo .ipynb</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Atalhos úteis no Jupyter</h4>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li><code>Shift+Enter</code> → Executar célula</li>
+                    <li><code>Ctrl+/</code> → Comentar código</li>
+                    <li><code>Tab</code> → Auto-complete</li>
+                    <li><code>Esc → A</code> → Inserir célula acima</li>
+                    <li><code>Esc → B</code> → Inserir célula abaixo</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+          </section>
+
+          <!-- Section 7: Avaliação -->
+          <section class="border-t border-slate-200 border-b">
+            <details class="group py-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-jakarta font-semibold text-lg text-slate-900 hover:text-cyan-600 transition">
+                <span>Avaliação e Projetos</span>
+                <svg class="toggle-icon w-5 h-5 text-cyan-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </summary>
+              <div class="mt-4 pl-0 space-y-4 text-slate-700 leading-relaxed">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Qual é a fórmula de cálculo da nota final?</h4>
+                  <p><strong>Nota Final = 0.12×P1 + 0.12×P2 + 0.12×P3 + 0.18×Proj1 + 0.26×Proj2 + 0.10×Listas + 0.10×Participação</strong></p>
+                  <p class="text-sm mt-2"><strong>Aprovação:</strong> Nota final ≥ 6.0</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Como é estruturado o Projeto 1?</h4>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li>Introdução teórica (0.5-1 página)</li>
+                    <li>Metodologia (0.5-1 página)</li>
+                    <li>Implementação (código comentado)</li>
+                    <li>Resultados (1-2 páginas com gráficos)</li>
+                    <li>Discussão (0.5-1 página)</li>
+                    <li>Conclusão (0.3-0.5 página)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Quais são as opções de Projeto Capstone?</h4>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li><strong>A:</strong> Simulação de Órbita Planetária</li>
+                    <li><strong>B:</strong> Análise Experimental Completa</li>
+                    <li><strong>C:</strong> Dinâmica Molecular com Lennard-Jones</li>
+                    <li><strong>D:</strong> Seu próprio projeto integrado</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+          </section>
+        </div>
+
+        <!-- Footer CTA -->
+        <div class="mt-12 p-6 bg-cyan-50 rounded-2xl border border-cyan-300 text-center">
+          <p class="text-slate-700 mb-4">Ainda tem dúvidas? Teste seus conhecimentos com nosso quiz!</p>
+          <a href="quiz.html" class="inline-block px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-full font-semibold transition">
+            Acessar QuizAlgo →
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

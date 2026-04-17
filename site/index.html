@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSC1189 - Algoritmos & Programação</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', 'Geist', sans-serif;
+    }
+    h1, h2, h3, .heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .floating-nav {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+    .resource-card {
+      transition: all 0.3s ease;
+    }
+    .resource-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-teal-700">
+  <div class="min-h-screen flex flex-col">
+    <!-- Floating Navigation -->
+    <nav class="fixed top-6 left-0 right-0 z-50 flex justify-center px-6">
+      <div class="floating-nav rounded-full px-6 py-3 shadow-lg flex items-center justify-between gap-8 max-w-3xl w-full">
+        <a href="#" class="font-jakarta font-semibold text-slate-900 flex items-center gap-2">
+          <span class="text-cyan-500">📚</span> FSC1189
+        </a>
+        <div class="hidden sm:flex gap-8 text-sm font-medium">
+          <a href="#recursos" class="text-slate-600 hover:text-slate-900 transition">Recursos</a>
+          <a href="#faq-preview" class="text-slate-600 hover:text-slate-900 transition">FAQ</a>
+          <a href="quiz.html" class="text-slate-600 hover:text-slate-900 transition">QuizAlgo</a>
+        </div>
+        <a href="quiz.html" class="px-5 py-2.5 bg-cyan-500 hover:bg-cyan-600 text-white rounded-full text-sm font-semibold transition">
+          Quiz
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex items-center justify-center px-6 py-20 pt-32">
+      <div class="w-full max-w-7xl">
+        <!-- Hero Section -->
+        <div class="bg-green-50 rounded-3xl p-8 sm:p-14 shadow-2xl mb-12">
+          <div class="grid md:grid-cols-2 gap-10 items-center">
+            <!-- Left: Text -->
+            <div>
+              <h1 class="text-5xl lg:text-6xl font-jakarta font-semibold tracking-tight text-slate-900 mb-6">
+                FSC1189: Algoritmos & Programação
+              </h1>
+              <p class="text-lg text-slate-600 mb-8 max-w-lg">
+                Disciplina de Licenciatura em Física com foco em Português Estruturado, Algoritmos, Lógica de Programação, Fluxogramas e Métodos Numéricos aplicados à Física.
+              </p>
+
+              <!-- Stats -->
+              <div class="flex items-start gap-12 mb-10">
+                <div>
+                  <div class="text-4xl font-jakarta font-bold text-cyan-500">10</div>
+                  <p class="text-sm text-slate-600 font-medium">Capítulos Teóricos</p>
+                </div>
+                <div class="w-px h-12 bg-slate-300"></div>
+                <div>
+                  <div class="text-4xl font-jakarta font-bold text-cyan-500">6</div>
+                  <p class="text-sm text-slate-600 font-medium">Notebooks Jupyter</p>
+                </div>
+                <div class="w-px h-12 bg-slate-300"></div>
+                <div>
+                  <div class="text-4xl font-jakarta font-bold text-cyan-500">7</div>
+                  <p class="text-sm text-slate-600 font-medium">Listas de Exercícios</p>
+                </div>
+              </div>
+
+              <!-- CTA Buttons -->
+              <div class="flex flex-wrap gap-4">
+                <a href="quiz.html" class="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-full font-semibold transition">
+                  Acessar QuizAlgo →
+                </a>
+                <a href="faq.html" class="px-8 py-3 border-2 border-slate-300 hover:border-slate-400 text-slate-900 rounded-full font-semibold transition">
+                  Ver FAQ
+                </a>
+              </div>
+
+              <!-- Professor Info -->
+              <div class="mt-8 pt-8 border-t border-slate-200">
+                <p class="text-sm text-slate-600">
+                  <strong>Professor:</strong> Prof. Hans Rogério Zimermann<br>
+                  <strong>Instituição:</strong> UFSM - Centro de Ciências Naturais e Exatas<br>
+                  <strong>Semestre:</strong> 2026/1 (16 semanas)
+                </p>
+              </div>
+            </div>
+
+            <!-- Right: Graphic -->
+            <div class="flex justify-center">
+              <svg viewBox="0 0 400 400" width="350" height="350" class="max-w-full">
+                <!-- Background circle -->
+                <circle cx="200" cy="200" r="180" fill="rgba(6, 182, 212, 0.1)" stroke="#06b6d4" stroke-width="2"/>
+
+                <!-- Center: Portugol symbol -->
+                <circle cx="200" cy="200" r="60" fill="#06b6d4" opacity="0.2"/>
+                <text x="200" y="210" text-anchor="middle" font-size="24" font-family="Plus Jakarta Sans" font-weight="bold" fill="#0f172a">SE</text>
+
+                <!-- Algorithm flow circles -->
+                <circle cx="100" cy="120" r="35" fill="#22c55e" opacity="0.2" stroke="#22c55e" stroke-width="2"/>
+                <text x="100" y="128" text-anchor="middle" font-size="12" font-family="Inter" font-weight="600" fill="#0f172a">ALGO</text>
+
+                <circle cx="300" cy="120" r="35" fill="#3b82f6" opacity="0.2" stroke="#3b82f6" stroke-width="2"/>
+                <text x="300" y="128" text-anchor="middle" font-size="12" font-family="Inter" font-weight="600" fill="#0f172a">LÓGICA</text>
+
+                <circle cx="100" cy="280" r="35" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="2"/>
+                <text x="100" y="288" text-anchor="middle" font-size="12" font-family="Inter" font-weight="600" fill="#0f172a">FLUXO</text>
+
+                <circle cx="300" cy="280" r="35" fill="#ef4444" opacity="0.2" stroke="#ef4444" stroke-width="2"/>
+                <text x="300" y="288" text-anchor="middle" font-size="12" font-family="Inter" font-weight="600" fill="#0f172a">NUMÉRICO</text>
+
+                <!-- Connecting lines -->
+                <line x1="135" y1="145" x2="265" y2="145" stroke="#06b6d4" stroke-width="2" opacity="0.5"/>
+                <line x1="135" y1="255" x2="265" y2="255" stroke="#06b6d4" stroke-width="2" opacity="0.5"/>
+                <line x1="100" y1="155" x2="100" y2="245" stroke="#06b6d4" stroke-width="2" opacity="0.5"/>
+                <line x1="300" y1="155" x2="300" y2="245" stroke="#06b6d4" stroke-width="2" opacity="0.5"/>
+
+                <!-- Diagonals -->
+                <line x1="140" y1="160" x2="260" y2="240" stroke="#06b6d4" stroke-width="2" opacity="0.3"/>
+                <line x1="260" y1="160" x2="140" y2="240" stroke="#06b6d4" stroke-width="2" opacity="0.3"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resources Grid -->
+        <div id="recursos" class="mb-12">
+          <h2 class="text-3xl font-jakarta font-semibold tracking-tight text-white mb-8">Recursos Disponíveis</h2>
+
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- Card 1: Apostila -->
+            <div class="resource-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-md">
+              <div class="text-5xl mb-4">📖</div>
+              <h3 class="text-xl font-jakarta font-semibold text-slate-900 mb-3">Apostila Completa</h3>
+              <p class="text-slate-600 text-sm mb-6">
+                90 páginas com 10 capítulos: desde conceitos básicos até projetos integrados em Física.
+              </p>
+              <a href="../APOSTILA_ALGORITMOS_PROGRAMACAO.md" target="_blank" class="inline-flex items-center text-cyan-500 hover:text-cyan-600 font-semibold transition">
+                Acessar →
+              </a>
+            </div>
+
+            <!-- Card 2: Notebooks -->
+            <div class="resource-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-md">
+              <div class="text-5xl mb-4">💻</div>
+              <h3 class="text-xl font-jakarta font-semibold text-slate-900 mb-3">Notebooks Jupyter</h3>
+              <p class="text-slate-600 text-sm mb-6">
+                6 notebooks com exercícios resolvidos, visualizações e experimentos práticos.
+              </p>
+              <a href="../" target="_blank" class="inline-flex items-center text-cyan-500 hover:text-cyan-600 font-semibold transition">
+                Explorar →
+              </a>
+            </div>
+
+            <!-- Card 3: Listas de Exercícios -->
+            <div class="resource-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-md">
+              <div class="text-5xl mb-4">📝</div>
+              <h3 class="text-xl font-jakarta font-semibold text-slate-900 mb-3">Listas de Exercícios</h3>
+              <p class="text-slate-600 text-sm mb-6">
+                7 listas com exercícios de dificuldade graduada em VisualG e Python.
+              </p>
+              <a href="../listas/" target="_blank" class="inline-flex items-center text-cyan-500 hover:text-cyan-600 font-semibold transition">
+                Visualizar →
+              </a>
+            </div>
+
+            <!-- Card 4: QuizAlgo -->
+            <div class="resource-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-md">
+              <div class="text-5xl mb-4">🧠</div>
+              <h3 class="text-xl font-jakarta font-semibold text-slate-900 mb-3">QuizAlgo</h3>
+              <p class="text-slate-600 text-sm mb-6">
+                Quiz interativo com 60+ questões em 4 níveis de dificuldade para testar conhecimento.
+              </p>
+              <a href="quiz.html" class="inline-flex items-center text-cyan-500 hover:text-cyan-600 font-semibold transition">
+                Começar Quiz →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Preview -->
+        <div id="faq-preview" class="bg-green-50 rounded-3xl p-8 sm:p-14 shadow-2xl mb-12">
+          <h2 class="text-3xl font-jakarta font-semibold tracking-tight text-slate-900 mb-8">Perguntas Frequentes</h2>
+
+          <div class="space-y-6 mb-8">
+            <!-- FAQ 1 -->
+            <div class="pb-6 border-b border-slate-200">
+              <h3 class="font-jakarta font-semibold text-lg text-slate-900 mb-3">
+                O que é um algoritmo?
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                Um algoritmo é uma sequência finita, ordenada e bem definida de instruções para resolver um problema específico. É independente de linguagem de programação.
+              </p>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="pb-6 border-b border-slate-200">
+              <h3 class="font-jakarta font-semibold text-lg text-slate-900 mb-3">
+                Quando usar PARA vs ENQUANTO?
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                Use <strong>PARA</strong> quando o número de repetições é <strong>conhecido</strong> (ex: preencher 10 linhas). Use <strong>ENQUANTO</strong> quando é <strong>desconhecido</strong> (ex: ler valores até que usuário diga "parar").
+              </p>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="pb-6">
+              <h3 class="font-jakarta font-semibold text-lg text-slate-900 mb-3">
+                Qual é a fórmula do período de um pêndulo simples?
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                <strong>T = 2π√(L/g)</strong>, onde L é o comprimento e g é a aceleração gravitacional. Não depende da massa ou amplitude (para pequenos ângulos)!
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="faq.html" class="inline-flex items-center px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-full font-semibold transition">
+              Ver Todas as Perguntas →
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA Banner -->
+        <div class="relative bg-teal-900 rounded-2xl p-12 sm:p-16 text-center overflow-hidden">
+          <!-- Background pattern -->
+          <div class="absolute inset-0 opacity-10">
+            <svg viewBox="0 0 100 100" class="w-full h-full">
+              <defs>
+                <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="white" stroke-width="0.5"/>
+                </pattern>
+              </defs>
+              <rect width="100" height="100" fill="url(#grid)" />
+            </svg>
+          </div>
+
+          <div class="relative z-10">
+            <h2 class="text-4xl font-jakarta font-bold text-white mb-4">
+              Teste seus Conhecimentos Agora!
+            </h2>
+            <p class="text-cyan-100 text-lg mb-8 max-w-2xl mx-auto">
+              QuizAlgo oferece 60+ questões em 4 níveis de dificuldade para ajudar você a reter conhecimento e se preparar para as avaliações.
+            </p>
+            <a href="quiz.html" class="inline-flex items-center px-8 py-3 bg-white hover:bg-slate-100 text-teal-900 rounded-full font-semibold transition">
+              Acessar QuizAlgo Agora →
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 px-6 mt-12">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <!-- Info -->
+          <div>
+            <h3 class="font-jakarta font-semibold text-lg mb-3">FSC1189</h3>
+            <p class="text-slate-400 text-sm">
+              Algoritmos e Programação para Licenciatura em Física
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div>
+            <h4 class="font-semibold text-sm mb-3 text-slate-300">Recursos</h4>
+            <ul class="text-slate-400 text-sm space-y-2">
+              <li><a href="#recursos" class="hover:text-white transition">Todos os Recursos</a></li>
+              <li><a href="quiz.html" class="hover:text-white transition">QuizAlgo</a></li>
+              <li><a href="faq.html" class="hover:text-white transition">FAQ Completo</a></li>
+              <li><a href="../PLANO_DE_ENSINO_16_SEMANAS.md" class="hover:text-white transition">Plano de Ensino</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="font-semibold text-sm mb-3 text-slate-300">Contato</h4>
+            <p class="text-slate-400 text-sm">
+              Prof. Hans Rogério Zimermann<br>
+              Email: <a href="mailto:hans@ufsm.br" class="text-cyan-400 hover:text-cyan-300 transition">hans@ufsm.br</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- License -->
+        <div class="border-t border-slate-700 pt-8 text-center text-slate-400 text-sm">
+          <p class="mb-2">
+            <strong>Licença Dupla:</strong>
+            <span class="inline-block mr-4">MIT (Código)</span>
+            <span>CC BY 4.0 (Conteúdo Didático)</span>
+          </p>
+          <p>Desenvolvido por Prof. Hans Rogério Zimermann - UFSM (2026)</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
