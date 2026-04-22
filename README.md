@@ -88,7 +88,7 @@ Este material completo fornece uma formação em Algoritmos e Programação orie
 **Como usar:**
 ```bash
 # Abrir em Jupyter Notebook
-jupyter notebook 01_Conceitos_Basicos.ipynb
+jupyter notebook notebooks/01_Conceitos_Basicos.ipynb
 
 # Ou em Google Colab
 # Faça upload do arquivo e execute
@@ -210,7 +210,7 @@ jupyter notebook 01_Conceitos_Basicos.ipynb
 | 15 | 10 | Projeto Capstone integrado | **Projeto 2** |
 | 16 | 1-10 | Revisão geral | **Prova Final** |
 
-**Consulte [PLANO_DE_ENSINO_16_SEMANAS.md](PLANO_DE_ENSINO_16_SEMANAS.md) para cronograma detalhado.**
+**Consulte [PLANO_DE_ENSINO_16_SEMANAS.md](docs/PLANO_DE_ENSINO_16_SEMANAS.md) para cronograma detalhado.**
 
 ---
 
@@ -239,7 +239,7 @@ conda install numpy pandas matplotlib scipy jupyter
 
 ### **Opção 1: Localmente com Jupyter**
 ```bash
-jupyter notebook 01_Conceitos_Basicos.ipynb
+jupyter notebook notebooks/01_Conceitos_Basicos.ipynb
 ```
 
 ### **Opção 2: Google Colab**

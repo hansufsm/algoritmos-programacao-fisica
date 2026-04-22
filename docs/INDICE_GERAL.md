@@ -11,29 +11,33 @@ Este conjunto de materiais foi desenvolvido especificamente para alunos de **Lic
 ```
 fsc1189/colab_notebooks/
 │
-├── 📘 APOSTILA_ALGORITMOS_PROGRAMACAO.md    (Principal - 90 páginas)
-│   └── 10 capítulos didáticos em Português Estruturado
-│
-├── 🔍 INDICE_GERAL.md                       (Este arquivo)
-│   └── Guia de navegação e orientação
-│
 ├── 📖 README.md                             (Getting Started)
-│   └── Como usar os recursos
 │
-├── 📊 SUMARIO_CONTEUDO.md                   (Visão detalhada)
-│   └── Estrutura de todos os capítulos
+├── 📁 notebooks/                            (Notebooks Jupyter)
+│   ├── 📓 01_Conceitos_Basicos.ipynb        (Cap. 1-3)
+│   ├── 📓 02_Estruturas_Controle_Repeticao.ipynb (Cap. 4-6)
+│   ├── 📓 03_Metodos_Numericos_Projetos.ipynb   (Cap. 7-10)
+│   ├── 📓 04_Circuito_RC.ipynb
+│   ├── 📓 05_Tratamento_Dados_Visualizacao.ipynb
+│   └── 📓 06_Projeto_Capstone_Fisica.ipynb
 │
-├── 🧮 INDICE_CONCEITOS_FISICA.md            (Referência rápida)
-│   └── Fórmulas, conceitos e aplicações
+├── 📁 docs/                                 (Documentação - este diretório)
+│   ├── 📘 APOSTILA_ALGORITMOS_PROGRAMACAO.md (Principal - 90 páginas)
+│   ├── 🔍 INDICE_GERAL.md                   (Este arquivo)
+│   ├── 📊 SUMARIO_CONTEUDO.md               (Visão detalhada)
+│   ├── 🧮 INDICE_CONCEITOS_FISICA.md        (Referência rápida)
+│   ├── 📅 PLANO_DE_ENSINO_16_SEMANAS.md
+│   ├── ❓ FAQ_DISCIPLINA.md
+│   ├── 🐛 GUIA_DEBUGGING.md
+│   ├── 🌐 GITHUB_INFO.md
+│   ├── 🔐 PORTAL_ACCESS.md
+│   └── 📝 planodeaula-estruturas-de-dados.md
 │
-├── 📓 01_Conceitos_Basicos.ipynb            (Notebook 1)
-│   └── Exercícios dos Capítulos 1-3
+├── 📁 recursos/                             (Materiais externos)
+│   └── 📄 apostila_algoritmos_mar2007.pdf
 │
-├── 📓 02_Estruturas_Controle_Repeticao.ipynb (Notebook 2)
-│   └── Exercícios dos Capítulos 4-6
-│
-└── 📓 03_Metodos_Numericos_Projetos.ipynb   (Notebook 3)
-    └── Exercícios dos Capítulos 7-10
+├── 📁 listas/                               (Listas de exercícios)
+└── 📁 site/                                 (Site da disciplina)
 ```
 
 ---
@@ -44,7 +48,7 @@ fsc1189/colab_notebooks/
 
 Comece aqui:
 1. Leia este arquivo (INDICE_GERAL.md) - você está aqui! ✓
-2. Consulte [README.md](README.md) para entender a estrutura
+2. Consulte [README.md](../README.md) para entender a estrutura
 3. Abra a [APOSTILA_ALGORITMOS_PROGRAMACAO.md](APOSTILA_ALGORITMOS_PROGRAMACAO.md)
 4. Comece pelo Capítulo 1
 
@@ -69,7 +73,7 @@ Consulte [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md)
 ### **CAPÍTULO 1: Introdução a Algoritmos**
 - **Arquivo:** [APOSTILA_ALGORITMOS_PROGRAMACAO.md - Capítulo 1](APOSTILA_ALGORITMOS_PROGRAMACAO.md#capítulo-1-introdução-a-algoritmos)
 - **Duração:** 8 páginas
-- **Exercício Prático:** [Notebook 01 - Exercício 1.1](01_Conceitos_Basicos.ipynb)
+- **Exercício Prático:** [Notebook 01 - Exercício 1.1](../notebooks/01_Conceitos_Basicos.ipynb)
 - **Conceitos:** Algoritmo, representação, trajetória de projétil
 - **Exemplo Físico:** Movimento de projétil com $v_0 = 20$ m/s, $\theta = 35°$
 - **Tempo Estimado:** 2-3 horas
@@ -86,7 +90,7 @@ Consulte [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md)
 ### **CAPÍTULO 2: Lógica de Programação**
 - **Arquivo:** [APOSTILA_ALGORITMOS_PROGRAMACAO.md - Capítulo 2](APOSTILA_ALGORITMOS_PROGRAMACAO.md#capítulo-2-lógica-de-programação)
 - **Duração:** 6 páginas
-- **Exercício Prático:** [Notebook 01 - Exercício 2.1](01_Conceitos_Basicos.ipynb)
+- **Exercício Prático:** [Notebook 01 - Exercício 2.1](../notebooks/01_Conceitos_Basicos.ipynb)
 - **Conceitos:** Booleano, operadores lógicos, estruturas
 - **Exemplo Físico:** Classificação de movimento
 - **Tempo Estimado:** 2 horas
@@ -104,8 +108,8 @@ Consulte [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md)
 - **Arquivo:** [APOSTILA_ALGORITMOS_PROGRAMACAO.md - Capítulo 3](APOSTILA_ALGORITMOS_PROGRAMACAO.md#capítulo-3-variáveis-e-tipos-de-dados)
 - **Duração:** 7 páginas
 - **Exercícios Práticos:** 
-  - [Notebook 01 - Exercício 3.1](01_Conceitos_Basicos.ipynb)
-  - [Notebook 01 - Exercício 3.2](01_Conceitos_Basicos.ipynb)
+  - [Notebook 01 - Exercício 3.1](../notebooks/01_Conceitos_Basicos.ipynb)
+  - [Notebook 01 - Exercício 3.2](../notebooks/01_Conceitos_Basicos.ipynb)
 - **Conceitos:** Variável, tipos primitivos, nomenclatura, escopo
 - **Exemplo Físico:** Constantes físicas, validação de medidas
 - **Tempo Estimado:** 2-3 horas
@@ -122,7 +126,7 @@ Consulte [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md)
 ### **CAPÍTULO 4: Estruturas de Controle**
 - **Arquivo:** [APOSTILA_ALGORITMOS_PROGRAMACAO.md - Capítulo 4](APOSTILA_ALGORITMOS_PROGRAMACAO.md#capítulo-4-estruturas-de-controle)
 - **Duração:** 8 páginas
-- **Exercício Prático:** [Notebook 02 - Exercício 4.1](02_Estruturas_Controle_Repeticao.ipynb)
+- **Exercício Prático:** [Notebook 02 - Exercício 4.1](../notebooks/02_Estruturas_Controle_Repeticao.ipynb)
 - **Conceitos:** Condicional SE-SENÃO, múltiplas condições
 - **Exemplo Físico:** Estados de matéria, validação de dados
 - **Tempo Estimado:** 3 horas
@@ -140,8 +144,8 @@ Consulte [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md)
 - **Arquivo:** [APOSTILA_ALGORITMOS_PROGRAMACAO.md - Capítulo 5](APOSTILA_ALGORITMOS_PROGRAMACAO.md#capítulo-5-estruturas-de-repetição)
 - **Duração:** 9 páginas
 - **Exercícios Práticos:**
-  - [Notebook 02 - Exercício 5.1](02_Estruturas_Controle_Repeticao.ipynb)
-  - [Notebook 02 - Exercício 5.2](02_Estruturas_Controle_Repeticao.ipynb)
+  - [Notebook 02 - Exercício 5.1](../notebooks/02_Estruturas_Controle_Repeticao.ipynb)
+  - [Notebook 02 - Exercício 5.2](../notebooks/02_Estruturas_Controle_Repeticao.ipynb)
 - **Conceitos:** PARA, ENQUANTO, REPETIR-ATÉ, SAIA
 - **Exemplo Físico:** Queda livre, série de Leibniz para π
 - **Tempo Estimado:** 3-4 horas
@@ -159,8 +163,8 @@ Consulte [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md)
 - **Arquivo:** [APOSTILA_ALGORITMOS_PROGRAMACAO.md - Capítulo 6](APOSTILA_ALGORITMOS_PROGRAMACAO.md#capítulo-6-vetores-e-matrizes)
 - **Duração:** 8 páginas
 - **Exercícios Práticos:**
-  - [Notebook 02 - Exercício 6.1](02_Estruturas_Controle_Repeticao.ipynb)
-  - [Notebook 02 - Exercício 6.2](02_Estruturas_Controle_Repeticao.ipynb)
+  - [Notebook 02 - Exercício 6.1](../notebooks/02_Estruturas_Controle_Repeticao.ipynb)
+  - [Notebook 02 - Exercício 6.2](../notebooks/02_Estruturas_Controle_Repeticao.ipynb)
 - **Conceitos:** Arrays 1D e 2D, operações vetoriais
 - **Exemplo Físico:** Produto escalar, coordenadas 3D
 - **Tempo Estimado:** 3 horas
@@ -177,7 +181,7 @@ Consulte [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md)
 ### **CAPÍTULO 7: Funções e Procedimentos**
 - **Arquivo:** [APOSTILA_ALGORITMOS_PROGRAMACAO.md - Capítulo 7](APOSTILA_ALGORITMOS_PROGRAMACAO.md#capítulo-7-funções-e-procedimentos)
 - **Duração:** 8 páginas
-- **Exercício Prático:** [Notebook 03 - Exercício 7.1](03_Metodos_Numericos_Projetos.ipynb)
+- **Exercício Prático:** [Notebook 03 - Exercício 7.1](../notebooks/03_Metodos_Numericos_Projetos.ipynb)
 - **Conceitos:** Funções, procedimentos, passagem de parâmetros
 - **Exemplo Físico:** Cálculo de energias, conversão de unidades
 - **Tempo Estimado:** 3 horas
@@ -195,9 +199,9 @@ Consulte [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md)
 - **Arquivo:** [APOSTILA_ALGORITMOS_PROGRAMACAO.md - Capítulo 8](APOSTILA_ALGORITMOS_PROGRAMACAO.md#capítulo-8-métodos-numéricos-em-física)
 - **Duração:** 12 páginas (mais denso)
 - **Exercícios Práticos:**
-  - [Notebook 03 - Exercício 8.1](03_Metodos_Numericos_Projetos.ipynb)
-  - [Notebook 03 - Exercício 8.2](03_Metodos_Numericos_Projetos.ipynb)
-  - [Notebook 03 - Exercício 8.3](03_Metodos_Numericos_Projetos.ipynb)
+  - [Notebook 03 - Exercício 8.1](../notebooks/03_Metodos_Numericos_Projetos.ipynb)
+  - [Notebook 03 - Exercício 8.2](../notebooks/03_Metodos_Numericos_Projetos.ipynb)
+  - [Notebook 03 - Exercício 8.3](../notebooks/03_Metodos_Numericos_Projetos.ipynb)
 - **Conceitos:** Bisseção, diferenciação, integração numérica, Euler
 - **Exemplo Físico:** Raízes, derivadas, integrais, EDOs
 - **Tempo Estimado:** 6-8 horas
@@ -231,8 +235,8 @@ Consulte [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md)
 - **Arquivo:** [APOSTILA_ALGORITMOS_PROGRAMACAO.md - Capítulo 10](APOSTILA_ALGORITMOS_PROGRAMACAO.md#capítulo-10-projetos-integrados-em-física)
 - **Duração:** 10 páginas
 - **Exercícios Práticos:**
-  - [Notebook 03 - Projeto 10.1](03_Metodos_Numericos_Projetos.ipynb)
-  - [Notebook 03 - Projeto 10.2](03_Metodos_Numericos_Projetos.ipynb)
+  - [Notebook 03 - Projeto 10.1](../notebooks/03_Metodos_Numericos_Projetos.ipynb)
+  - [Notebook 03 - Projeto 10.2](../notebooks/03_Metodos_Numericos_Projetos.ipynb)
 - **Projetos:** Lançamento de projétil, pêndulo, circuito RC
 - **Tempo Estimado:** 8-10 horas
 
@@ -357,7 +361,7 @@ Você completou o material quando conseguir:
 → Consulte [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md)
 
 ### **Problemas técnicos?**
-→ Verifique [README.md](README.md) - seção Requisitos Técnicos
+→ Verifique [README.md](../README.md) - seção Requisitos Técnicos
 
 ---
 
@@ -383,10 +387,10 @@ Você completou o material quando conseguir:
 | Apostila Principal | [APOSTILA_ALGORITMOS_PROGRAMACAO.md](APOSTILA_ALGORITMOS_PROGRAMACAO.md) | Leitura principal |
 | Índice de Conceitos | [INDICE_CONCEITOS_FISICA.md](INDICE_CONCEITOS_FISICA.md) | Referência rápida |
 | Sumário Detalhado | [SUMARIO_CONTEUDO.md](SUMARIO_CONTEUDO.md) | Estrutura completa |
-| Notebook 1 | [01_Conceitos_Basicos.ipynb](01_Conceitos_Basicos.ipynb) | Cap. 1-3 |
-| Notebook 2 | [02_Estruturas_Controle_Repeticao.ipynb](02_Estruturas_Controle_Repeticao.ipynb) | Cap. 4-6 |
-| Notebook 3 | [03_Metodos_Numericos_Projetos.ipynb](03_Metodos_Numericos_Projetos.ipynb) | Cap. 7-10 |
-| README | [README.md](README.md) | Getting started |
+| Notebook 1 | [01_Conceitos_Basicos.ipynb](../notebooks/01_Conceitos_Basicos.ipynb) | Cap. 1-3 |
+| Notebook 2 | [02_Estruturas_Controle_Repeticao.ipynb](../notebooks/02_Estruturas_Controle_Repeticao.ipynb) | Cap. 4-6 |
+| Notebook 3 | [03_Metodos_Numericos_Projetos.ipynb](../notebooks/03_Metodos_Numericos_Projetos.ipynb) | Cap. 7-10 |
+| README | [README.md](../README.md) | Getting started |
 
 ---
 

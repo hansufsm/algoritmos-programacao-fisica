@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat)",
+      "Read(//tmp/**)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3)",
+      "Read(//home/hans/pCloudDrive/Public Folder/obsidian/atividades-academicas/aulas/fsc1189/**)",
+      "Bash(ls \"/home/hans/pCloudDrive/Public Folder/obsidian/atividades-academicas/aulas/fsc1189/colab_notebooks/design_system/assets/\"*.css)"
+    ]
+  }
+}
