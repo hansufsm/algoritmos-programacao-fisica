@@ -27,7 +27,6 @@ algoritmos-programacao-fisica/
 ├── 📖 README.md                             (Getting started)
 ├── 📜 LICENSE / LICENSE_CC.md               (MIT + CC BY 4.0)
 ├── 🤝 CONTRIBUTING.md / CODE_OF_CONDUCT.md  (Contribuição)
-├── 📋 RELEASES.md                           (Histórico de versões)
 │
 ├── 📁 notebooks/                            (Jupyter Notebooks)
 │   ├── 📓 01_Conceitos_Basicos.ipynb        (Cap. 1-3)
@@ -285,6 +284,7 @@ Veja [LICENSE](LICENSE) para detalhes completos.
 - [x] Commits iniciais feitos
 - [x] Remote configurado
 - [x] Push inicial realizado
+- [x] Releases gerenciadas via `git tag` (aba Releases do GitHub)
 
 ---
 
