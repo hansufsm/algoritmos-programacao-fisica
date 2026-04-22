@@ -24,33 +24,39 @@
 ```
 algoritmos-programacao-fisica/
 │
-├── 📘 APOSTILA_ALGORITMOS_PROGRAMACAO.md    (33 KB - Principal)
-│   └── 10 capítulos completos em Portugol
+├── 📖 README.md                             (Getting started)
+├── 📜 LICENSE / LICENSE_CC.md               (MIT + CC BY 4.0)
+├── 🤝 CONTRIBUTING.md / CODE_OF_CONDUCT.md  (Contribuição)
+├── 📋 RELEASES.md                           (Histórico de versões)
 │
-├── 📓 01_Conceitos_Basicos.ipynb            (12 KB)
-│   └── Exercícios Capítulos 1-3
+├── 📁 notebooks/                            (Jupyter Notebooks)
+│   ├── 📓 01_Conceitos_Basicos.ipynb        (Cap. 1-3)
+│   ├── 📓 02_Estruturas_Controle_Repeticao.ipynb (Cap. 4-6)
+│   ├── 📓 03_Metodos_Numericos_Projetos.ipynb   (Cap. 7-10)
+│   ├── 📓 04_Circuito_RC.ipynb
+│   ├── 📓 05_Tratamento_Dados_Visualizacao.ipynb
+│   └── 📓 06_Projeto_Capstone_Fisica.ipynb
 │
-├── 📓 02_Estruturas_Controle_Repeticao.ipynb (14 KB)
-│   └── Exercícios Capítulos 4-6
+├── 📁 docs/                                 (Documentação)
+│   ├── 📘 APOSTILA_ALGORITMOS_PROGRAMACAO.md (Principal - 90 pág.)
+│   ├── 🔍 INDICE_GERAL.md                   (Navegação completa)
+│   ├── 📊 SUMARIO_CONTEUDO.md               (Visão detalhada)
+│   ├── 🧮 INDICE_CONCEITOS_FISICA.md        (Referência rápida)
+│   ├── 📅 PLANO_DE_ENSINO_16_SEMANAS.md
+│   ├── ❓ FAQ_DISCIPLINA.md
+│   ├── 🐛 GUIA_DEBUGGING.md
+│   ├── 🌐 GITHUB_INFO.md
+│   ├── 🔐 PORTAL_ACCESS.md
+│   └── 📝 planodeaula-estruturas-de-dados.md
 │
-├── 📓 03_Metodos_Numericos_Projetos.ipynb   (22 KB)
-│   └── Exercícios Capítulos 7-10
+├── 📁 recursos/                             (Materiais externos)
+│   └── 📄 apostila_algoritmos_mar2007.pdf
 │
-├── 📚 Documentação/
-│   ├── README.md                            (Getting started)
-│   ├── SUMARIO_CONTEUDO.md                  (Visão detalhada)
-│   ├── INDICE_CONCEITOS_FISICA.md           (Referência rápida)
-│   ├── INDICE_GERAL.md                      (Navegação completa)
-│   └── RELEASES.md                          (Histórico de versões)
-│
-├── 🤝 Contribuição/
-│   ├── CONTRIBUTING.md                      (Diretrizes)
-│   ├── CODE_OF_CONDUCT.md                   (Código de conduta)
-│   └── LICENSE                              (MIT License)
-│
+├── 📁 listas/                               (Listas de exercícios)
+├── 📁 site/                                 (Site da disciplina)
 └── .github/
-    ├── CODEOWNERS                           (Gerenciamento)
-    ├── pull_request_template.md             (Template PRs)
+    ├── CODEOWNERS
+    ├── pull_request_template.md
     └── ISSUE_TEMPLATE/
         ├── bug_report.md
         └── feature_request.md
@@ -71,7 +77,7 @@ algoritmos-programacao-fisica/
 - **Releases:** https://github.com/hansufsm/algoritmos-programacao-fisica/releases
 
 ### Arquivo Raw (Para Download Direto)
-- **Apostila:** https://raw.githubusercontent.com/hansufsm/algoritmos-programacao-fisica/master/APOSTILA_ALGORITMOS_PROGRAMACAO.md
+- **Apostila:** https://raw.githubusercontent.com/hansufsm/algoritmos-programacao-fisica/master/docs/APOSTILA_ALGORITMOS_PROGRAMACAO.md
 
 ---
 

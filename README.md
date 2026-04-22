@@ -177,6 +177,76 @@ jupyter notebook notebooks/01_Conceitos_Basicos.ipynb
 
 ---
 
+### 5. **04_Circuito_RC.ipynb**
+
+**Jupyter Notebook** dedicado à simulação de circuito RC (Capítulo 10.3)
+
+**Exercícios inclusos:**
+- 10.3: Projeto — Circuito RC
+  - Equação diferencial: $V_C(t) = V_0(1 - e^{-t/RC})$
+  - Simulação da carga e descarga do capacitor
+  - Análise da constante de tempo $\tau = RC$
+  - Visualização da curva de tensão
+
+**Exercícios Propostos:**
+- Variação de R e C e seus efeitos na constante de tempo
+- Comparação analítica × numérica
+
+**Bibliotecas usadas:**
+- NumPy, Matplotlib
+- SciPy (odeint)
+
+---
+
+### 6. **05_Tratamento_Dados_Visualizacao.ipynb**
+
+**Jupyter Notebook** com exercícios do Capítulo 9
+
+**Exercícios inclusos:**
+- 9.1: Estatísticas descritivas
+  - Média, variância, desvio padrão
+  - Detecção de outliers ($3\sigma$)
+
+- 9.2: Interpolação de dados
+  - Interpolação linear entre pontos experimentais
+  - Estimativa de valores intermediários
+
+- 9.3: Visualização avançada
+  - Histogramas e gráficos de dispersão
+  - Curvas de ajuste com Matplotlib
+
+**Exercícios Propostos:**
+- Análise estatística de medidas de laboratório
+- Regressão linear com estimativa de incerteza
+
+**Bibliotecas usadas:**
+- NumPy, Pandas, Matplotlib
+- SciPy (interpolate, stats)
+
+---
+
+### 7. **06_Projeto_Capstone_Fisica.ipynb**
+
+**Jupyter Notebook** de projeto integrador final (Capítulos 1-10)
+
+**Conteúdo:**
+- Integração de todos os conceitos da disciplina:
+  - Algoritmos, estruturas de controle e repetição
+  - Métodos numéricos aplicados
+  - Tratamento e visualização de dados
+
+- Simulação física completa com múltiplos componentes
+- Documentação profissional de código
+- Análise e comunicação de resultados
+
+**Objetivo:** Demonstrar domínio completo da disciplina em um projeto autônomo de simulação física.
+
+**Bibliotecas usadas:**
+- NumPy, Pandas, Matplotlib
+- SciPy, e outras conforme o projeto
+
+---
+
 ## 🎯 Cronograma 16 Semanas — Estrutura Pedagógica
 
 ### **Módulo 1: Fundamentos (Semanas 1-4)**

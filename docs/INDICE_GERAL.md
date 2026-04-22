@@ -390,6 +390,9 @@ Você completou o material quando conseguir:
 | Notebook 1 | [01_Conceitos_Basicos.ipynb](../notebooks/01_Conceitos_Basicos.ipynb) | Cap. 1-3 |
 | Notebook 2 | [02_Estruturas_Controle_Repeticao.ipynb](../notebooks/02_Estruturas_Controle_Repeticao.ipynb) | Cap. 4-6 |
 | Notebook 3 | [03_Metodos_Numericos_Projetos.ipynb](../notebooks/03_Metodos_Numericos_Projetos.ipynb) | Cap. 7-10 |
+| Notebook 4 | [04_Circuito_RC.ipynb](../notebooks/04_Circuito_RC.ipynb) | Circuito RC |
+| Notebook 5 | [05_Tratamento_Dados_Visualizacao.ipynb](../notebooks/05_Tratamento_Dados_Visualizacao.ipynb) | Dados e Visualização |
+| Notebook 6 | [06_Projeto_Capstone_Fisica.ipynb](../notebooks/06_Projeto_Capstone_Fisica.ipynb) | Projeto Integrador |
 | README | [README.md](../README.md) | Getting started |
 
 ---
