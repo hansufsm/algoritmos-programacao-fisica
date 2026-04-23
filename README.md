@@ -355,6 +355,11 @@ jupyter notebook notebooks/01_Conceitos_Basicos.ipynb
 
 ### **Para Aprofundamento:**
 
+- **Algoritmos em VisualG — Laysarielly (GitHub)**: https://github.com/laysarielly/visualg-algoritmos/tree/master/Algoritmos
+  - Coleção de algoritmos em Portugol para VisualG
+  - Exemplos práticos e exercícios comentados
+  - Útil como referência e inspiração para os exercícios da disciplina
+
 - **PortalFísica**: https://www.portalfisica.com
   - Recursos didáticos em Física
   - Problemas e simulações
