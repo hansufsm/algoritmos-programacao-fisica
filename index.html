@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Física FSC1189 | Algoritmos e Programação</title>
+  <meta name="description" content="Portal de recursos da disciplina FSC1189 - Algoritmos e Programação para Licenciatura em Física na UFSM." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-deep: #070b14;
+      --bg-card: rgba(15, 22, 33, 0.8);
+      --bg-card-hover: rgba(21, 29, 46, 0.9);
+      --border: rgba(255, 255, 255, 0.08);
+      --cyan: #22d3ee;
+      --purple: #a855f7;
+      --pink: #ec4899;
+      --green: #10b981;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --nav-bg: rgba(7, 11, 20, 0.85);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Starfield Background */
+    #starfield {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 64px;
+      background: var(--nav-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-container {
+      width: 100%;
+      max-width: 1100px;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      color: var(--cyan);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--cyan);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 160px 1.5rem 80px;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(34, 211, 238, 0.1);
+      border: 1px solid rgba(34, 211, 238, 0.2);
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+      color: var(--cyan);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #fff 0%, var(--cyan) 50%, var(--purple) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      max-width: 700px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.75rem 1.75rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--cyan);
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--border);
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Sections */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    .section-title-wrap {
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .section-title-wrap h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-line {
+      height: 3px;
+      width: 80px;
+      background: linear-gradient(90deg, var(--cyan), var(--purple), var(--pink));
+      border-radius: 999px;
+    }
+
+    /* Grid and Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: var(--transition);
+      height: 100%;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--accent-color, var(--cyan));
+      opacity: 0.8;
+    }
+
+    .card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--accent-color, var(--cyan));
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      color: var(--accent-color, var(--cyan));
+    }
+
+    .card-content h3 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .card-content p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .card-arrow {
+      position: absolute;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: var(--transition);
+      color: var(--accent-color, var(--cyan));
+    }
+
+    .card:hover .card-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Footer */
+    footer {
+      padding: 6rem 1.5rem 4rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      margin-top: 4rem;
+    }
+
+    .footer-text {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-text strong {
+      color: #fff;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-links a {
+      color: var(--cyan);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* Animation Classes */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Fallback for no-js or tools */
+    .no-js .reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2.5rem; }
+      .grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="starfield"></canvas>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">FSC<span>1189</span></a>
+      <div class="nav-links">
+        <a href="#raiz">Raiz</a>
+        <a href="#docs">Documentação</a>
+        <a href="#listas">Listas</a>
+        <a href="#notebooks">Notebooks</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="badge">📘 FSC1189 · Semestre 2026/1</div>
+    <h1>Algoritmos e<br>Programação</h1>
+    <p>Portal acadêmico de Licenciatura em Física. Explore nossa apostila completa, guias de desenvolvimento, listas de exercícios e notebooks interativos.</p>
+    <div class="hero-actions">
+      <a href="#docs" class="btn btn-primary">Ver Documentação</a>
+      <a href="#listas" class="btn btn-outline">Ir para Listas</a>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Raiz Section -->
+    <section id="raiz" class="reveal">
+      <div class="section-title-wrap">
+        <h2><span>📄</span> Documentos da Raiz</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="grid">
+        <a href="README.md" class="card" style="--accent-color: var(--cyan);">
+          <div class="card-icon">📖</div>
+          <div class="card-content">
+            <h3>README.md</h3>
+            <p>Visão geral do repositório, cronograma de aulas e guia de recursos disponíveis.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="CONTRIBUTING.md" class="card" style="--accent-color: var(--cyan);">
+          <div class="card-icon">🤝</div>
+          <div class="card-content">
+            <h3>CONTRIBUTING.md</h3>
+            <p>Diretrizes para alunos e colaboradores contribuírem com o material didático.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="CODE_OF_CONDUCT.md" class="card" style="--accent-color: var(--cyan);">
+          <div class="card-icon">⚖️</div>
+          <div class="card-content">
+            <h3>CODE_OF_CONDUCT.md</h3>
+            <p>Normas de convivência e conduta ética esperada na comunidade acadêmica.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="LICENSE_CC.md" class="card" style="--accent-color: var(--cyan);">
+          <div class="card-icon">🔏</div>
+          <div class="card-content">
+            <h3>LICENSE_CC.md</h3>
+            <p>Termos de uso do conteúdo didático sob a licença Creative Commons BY 4.0.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+      </div>
+    </section>
+
+    <div style="height: 6rem;"></div>
+
+    <!-- Docs Section -->
+    <section id="docs" class="reveal">
+      <div class="section-title-wrap">
+        <h2><span>📚</span> Documentação do Curso</h2>
+        <div class="section-line" style="background: linear-gradient(90deg, var(--purple), var(--pink));"></div>
+      </div>
+      
+      <div class="grid">
+        <a href="docs/APOSTILA_ALGORITMOS_PROGRAMACAO.md" class="card" style="--accent-color: var(--purple);">
+          <div class="card-icon">📓</div>
+          <div class="card-content">
+            <h3>APOSTILA_ALGORITMOS...</h3>
+            <p>Material base com 10 capítulos cobrindo de lógica básica a métodos numéricos.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="docs/PLANO_DE_ENSINO_16_SEMANAS.md" class="card" style="--accent-color: var(--purple);">
+          <div class="card-icon">🗓️</div>
+          <div class="card-content">
+            <h3>PLANO_DE_ENSINO...</h3>
+            <p>Cronograma detalhado das 16 semanas, datas de provas e critérios de avaliação.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="docs/GUIA_DEBUGGING.md" class="card" style="--accent-color: var(--purple);">
+          <div class="card-icon">🔍</div>
+          <div class="card-content">
+            <h3>GUIA_DEBUGGING.md</h3>
+            <p>Estratégias para encontrar e corrigir erros em VisualG e scripts Python.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="docs/INDICE_GERAL.md" class="card" style="--accent-color: var(--purple);">
+          <div class="card-icon">📑</div>
+          <div class="card-content">
+            <h3>INDICE_GERAL.md</h3>
+            <p>Mapa completo do conteúdo para localização rápida de tópicos específicos.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+      </div>
+    </section>
+
+    <div style="height: 6rem;"></div>
+
+    <!-- Listas Section -->
+    <section id="listas" class="reveal">
+      <div class="section-title-wrap">
+        <h2><span>📝</span> Listas de Exercícios</h2>
+        <div class="section-line" style="background: linear-gradient(90deg, var(--pink), var(--purple));"></div>
+      </div>
+      
+      <div class="grid">
+        <a href="listas/L01_Algoritmos_Logica.md" class="card" style="--accent-color: var(--pink);">
+          <div class="card-icon">1️⃣</div>
+          <div class="card-content">
+            <h3>L01: Algoritmos e Lógica</h3>
+            <p>Fundamentos do pensamento computacional e lógica de programação.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="listas/L02_Variaveis_Controle.md" class="card" style="--accent-color: var(--pink);">
+          <div class="card-icon">2️⃣</div>
+          <div class="card-content">
+            <h3>L02: Variáveis e Controle</h3>
+            <p>Uso de variáveis, tipos de dados e estruturas condicionais.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="listas/L03_Repeticao.md" class="card" style="--accent-color: var(--pink);">
+          <div class="card-icon">3️⃣</div>
+          <div class="card-content">
+            <h3>L03: Estruturas de Repetição</h3>
+            <p>Prática com laços de repetição (PARA, ENQUANTO).</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="listas/L07_Projetos_Integrados.md" class="card" style="--accent-color: var(--pink);">
+          <div class="card-icon">🚀</div>
+          <div class="card-content">
+            <h3>L07: Projetos Integrados</h3>
+            <p>Desafios finais integrando múltiplos conceitos de física e computação.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="listas/" class="btn btn-outline" style="font-size: 0.8rem;">Ver todas as 7 listas</a>
+      </div>
+    </section>
+
+    <div style="height: 6rem;"></div>
+
+    <!-- Notebooks Section -->
+    <section id="notebooks" class="reveal">
+      <div class="section-title-wrap">
+        <h2><span>📓</span> Notebooks Jupyter (Python)</h2>
+        <div class="section-line" style="background: linear-gradient(90deg, var(--green), var(--cyan));"></div>
+      </div>
+      
+      <div class="grid">
+        <a href="notebooks/01_Conceitos_Basicos.ipynb" class="card" style="--accent-color: var(--green);">
+          <div class="card-icon">🐍</div>
+          <div class="card-content">
+            <h3>01: Conceitos Básicos</h3>
+            <p>Python para física: trajetória de projéteis e operadores lógicos.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="notebooks/03_Metodos_Numericos_Projetos.ipynb" class="card" style="--accent-color: var(--green);">
+          <div class="card-icon">⚛️</div>
+          <div class="card-content">
+            <h3>03: Métodos Numéricos</h3>
+            <p>Bisseção, diferenciação e integração numérica aplicada à física.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="notebooks/06_Projeto_Capstone_Fisica.ipynb" class="card" style="--accent-color: var(--green);">
+          <div class="card-icon">🎓</div>
+          <div class="card-content">
+            <h3>06: Projeto Capstone</h3>
+            <p>Simulação física completa integrando todos os tópicos da disciplina.</p>
+          </div>
+          <div class="card-arrow">→</div>
+        </a>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="notebooks/" class="btn btn-outline" style="font-size: 0.8rem;">Explorar pasta de Notebooks</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="suporte">
+    <div class="footer-text">
+      <strong>FSC1189 — Algoritmo e Programação</strong> · UFSM · 2026/1
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/laysarielly/visualg-algoritmos/tree/master/Algoritmos" target="_blank">Recursos VisualG</a>
+      <a href="https://www.portalfisica.com" target="_blank">Portal Física</a>
+      <a href="LICENSE" target="_blank">Licença MIT</a>
+    </div>
+    <div class="footer-text" style="opacity: 0.5; font-size: 0.75rem;">
+      Prof. Hans Rogério Zimermann · Departamento de Física · CCNE
+    </div>
+  </footer>
+
+  <script>
+    // Starfield Animation
+    const canvas = document.getElementById('starfield');
+    const ctx = canvas.getContext('2d');
+    let width, height, stars = [];
+
+    function init() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+      
+      stars = [];
+      for (let i = 0; i < 150; i++) {
+        stars.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          size: Math.random() * 1.5,
+          speed: Math.random() * 0.05,
+          opacity: Math.random(),
+          color: Math.random() > 0.8 ? '#22d3ee' : '#ffffff'
+        });
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      stars.forEach(star => {
+        ctx.fillStyle = star.color;
+        ctx.globalAlpha = star.opacity;
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+        ctx.fill();
+        
+        star.y -= star.speed;
+        if (star.y < 0) star.y = height;
+        
+        star.opacity += (Math.random() - 0.5) * 0.01;
+        if (star.opacity < 0.1) star.opacity = 0.1;
+        if (star.opacity > 0.8) star.opacity = 0.8;
+      });
+      requestAnimationFrame(animate);
+    }
+
+    window.addEventListener('resize', init);
+    init();
+    animate();
+
+    // Intersection Observer for Scroll Reveal
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

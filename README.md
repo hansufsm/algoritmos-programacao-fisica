@@ -247,6 +247,21 @@ jupyter notebook notebooks/01_Conceitos_Basicos.ipynb
 
 ---
 
+### 8. **Listas de Exercícios (Graduadas)**
+
+**Pasta:** [listas/](listas/)  
+**Conteúdo:** 7 listas cobrindo todo o programa da disciplina:
+
+- [L01: Algoritmos e Lógica](listas/L01_Algoritmos_Logica.md) — Pensamento computacional e fluxogramas.
+- [L02: Variáveis e Controle](listas/L02_Variaveis_Controle.md) — Tipos de dados e estruturas SE-SENÃO.
+- [L03: Estruturas de Repetição](listas/L03_Repeticao.md) — Loops PARA e ENQUANTO.
+- [L04: Vetores e Matrizes](listas/L04_Vetores_Matrizes.md) — Manipulação de arrays multidimensionais.
+- [L05: Funções e Métodos Numéricos](listas/L05_Funcoes_Metodos_Numericos.md) — Modularização e raízes/integração.
+- [L06: Dados e Visualização](listas/L06_Dados_Visualizacao.md) — Pandas e Matplotlib aplicados.
+- [L07: Projetos Integrados](listas/L07_Projetos_Integrados.md) — Problemas complexos de Física.
+
+---
+
 ## 🎯 Cronograma 16 Semanas — Estrutura Pedagógica
 
 ### **Módulo 1: Fundamentos (Semanas 1-4)**

@@ -183,7 +183,7 @@ Este projeto está licenciado sob a **MIT License**.
 - Incluir cópia da licença
 - Descrever mudanças significativas
 
-Veja [LICENSE](LICENSE) para detalhes completos.
+Veja [LICENSE](../LICENSE) para detalhes completos.
 
 ---
 

@@ -7,7 +7,7 @@
 Abra este arquivo em seu navegador:
 
 ```
-site/index.html
+../site/index.html
 ```
 
 Ou use este caminho completo:
@@ -21,7 +21,7 @@ Ou use este caminho completo:
 Se preferir usar um servidor local (recomendado para melhor performance):
 
 ```bash
-cd "/home/hans/pCloudDrive/Public Folder/obsidian/atividades-academicas/aulas/fsc1189/colab_notebooks/site"
+cd "../site"
 python -m http.server 8000
 ```
 
@@ -34,10 +34,10 @@ http://localhost:8000
 
 | Página | Arquivo | Descrição |
 |---|---|---|
-| **Portal Principal** | `site/index.html` | Homepage com recursos e acesso a tudo |
-| **Quiz (QuizAlgo)** | `site/quiz.html` | Quiz interativo com 4 níveis |
-| **FAQ Completo** | `site/faq.html` | Perguntas frequentes com 7 seções |
-| **Banco de Questões** | `site/data/questions.js` | 60+ questões para o quiz |
+| **Portal Principal** | `../site/index.html` | Homepage com recursos e acesso a tudo |
+| **Quiz (QuizAlgo)** | `../site/quiz.html` | Quiz interativo com 4 níveis |
+| **FAQ Completo** | `../site/faq.html` | Perguntas frequentes com 7 seções |
+| **Banco de Questões** | `../site/data/questions.js` | 60+ questões para o quiz |
 
 ## ✨ Recursos Integrados
 
@@ -53,16 +53,16 @@ O portal fornece acesso centralizado a:
 
 Acesse diretamente:
 
-- **Portal:** [Clique aqui](site/index.html)
-- **Quiz:** [Clique aqui](site/quiz.html)
-- **FAQ:** [Clique aqui](site/faq.html)
+- **Portal:** [Clique aqui](../site/index.html)
+- **Quiz:** [Clique aqui](../site/quiz.html)
+- **FAQ:** [Clique aqui](../site/faq.html)
 
 ## 📚 Documentação
 
 Para mais detalhes:
 
-- **Guia Técnico:** [site/README.md](site/README.md)
-- **Guia do Usuário:** [site/QUICKSTART.md](site/QUICKSTART.md)
+- **Guia Técnico:** [../site/README.md](../site/README.md)
+- **Guia do Usuário:** [../site/QUICKSTART.md](../site/QUICKSTART.md)
 
 ## 💡 Dicas
 
